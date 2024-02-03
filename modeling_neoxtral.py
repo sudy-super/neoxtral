@@ -179,7 +179,7 @@ class NeoxtralPreTrainedModel(PreTrainedModel):
 class NeoxtralRMSNorm(nn.Module):
     def __init__(self, hidden_size, eps=1e-6):
         """
-        NeoxxtralRMSNorm is equivalent to T5LayerNorm
+        NeoxtralRMSNorm is equivalent to T5LayerNorm
         """
         super().__init__()
         self.weight = nn.Parameter(torch.ones(hidden_size))
