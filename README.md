@@ -3,8 +3,8 @@ Neoxtralは、GPT-NeoXとMixtralを組み合わせたMixture of Expertsモデル
 
 パラメータ効率の悪いMixtral Attention (q_proj, k_proj, v_proj, o_projとAttention関連の重みが4種類も存在) を廃し、GPT-NeoXのアーキテクチャを取り入れることで推論・学習双方におけるVRAMの使用量を削減しました。
 
-## 学習コード
-マルチノード学習コードはすでぃーが保有しています。
+## その他関連コード
+マルチノード学習コードとpt拡張子のモデルファイルをpytorch_model形式に変換するコードはすでぃーが保有しています。
 
 ## 実験
 1台のA100 80GBを使った学習実験では、18億パラメータを持つ8x350Mのモデルをglobal batch sizeを4に設定して実行したところ、49766MBのVRAMを使用しました。
