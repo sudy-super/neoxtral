@@ -175,7 +175,7 @@ class NeoxtralPreTrainedModel(PreTrainedModel):
             module.bias.data.zero_()
             module.weight.data.fill_(1.0)
 
-# Copied from transformers.models.llama.modeling_llama.LlamaRMSNorm with Llama->Mixtral
+# Copied from transformers.models.llama.modeling_llama.LlamaRMSNorm with Llama->Neoxtral
 class NeoxtralRMSNorm(nn.Module):
     def __init__(self, hidden_size, eps=1e-6):
         """
